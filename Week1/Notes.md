@@ -10,6 +10,20 @@ Neural networks combines several features together, and tries to make a new hidd
 
 Example: 
 
-![alt text][logo]
+![alt text][logo1]
 
-[logo]: 1.png "Logo Title Text 2"
+[logo1]: 1.png "1"
+
+## Supervised Neural Network
+
+Given input features, predict an output target `y`, which can be binary, or multiclass
+
+![alt text][logo2]
+
+[logo2]: 2.png "2"
+
+Different problems uses different deep learning models:
+
+- Images: CNN
+- Sequence data (Text, Audio): RNN/LSTM
+- Others: Standard FF NN
