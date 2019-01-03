@@ -27,3 +27,9 @@ Different problems uses different deep learning models:
 - Images: CNN
 - Sequence data (Text, Audio): RNN/LSTM
 - Others: Standard FF NN
+
+## Why is deep learning taking off?
+
+- More data, and deep learning performs well with huge volumes of data. Shallow learning does not.
+- More computational power
+- Smarter and faster algorithms
