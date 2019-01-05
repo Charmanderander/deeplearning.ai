@@ -18,6 +18,7 @@ Loss Function Squared Error will not work well with Logistic Regression
 [logo4]: 4.png "4"
 
 If the true value of `y=1`, we want to push the value of `y-hat` to be large (since it's a sigmoid, the largest value is 1)
+
 If the true value of `y=0`, we want to push the value of `y-hat` to be small (since it's a sigmoid, the largest value is 0)
 
 The Cost Function is the average of the Loss Function applied to each example
