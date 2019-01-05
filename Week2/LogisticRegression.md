@@ -9,3 +9,6 @@ Output label Y is either 0 or 1 (Binary classification)
 
 When we implement Logistic Regression, we are trying to learn parameters `w` and `b` so that `y` is an accurate prediciton between 0 and 1
 
+## Logistic Regression cost function
+
+Squared Error will not work well with Logistic Regression
