@@ -53,3 +53,6 @@ Depending on which value you're updating, `w` or `b`, we take the derivative wit
 ![alt text][logo8]
 
 [logo8]: 8.png "8"
+
+## Logistic Regression + Gradient Descent
+
