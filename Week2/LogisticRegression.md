@@ -54,5 +54,61 @@ Depending on which value you're updating, `w` or `b`, we take the derivative wit
 
 [logo8]: 8.png "8"
 
+## Intuition about Derivatives
+
+Derivative tell us the slope of the function.
+
+The derivative value of a graph tells us how much `y` moves when `x` is moved.
+
+When `x` moves by `0.001`, `y` moves by `d(y)/d(x) * 0.001`
+
+## Computation Graph
+
+A computation graph breaks down a formula to it's constituent operations, so that we can perform forward passes, and backward passes
+
+![alt text][logo9]
+
+[logo9]: 9.png "9"
+
+In this example, we want to minimize `J(a,b,c)`. The blue lines are the forward pass, while the red lines are the backward pass.
+
+Backward passes take the derivative of the computation blocks.
+
 ## Logistic Regression + Gradient Descent
 
+Recapping our Logistic Regression steps, we can break it down to its Computation Graph
+
+![alt text][logo10]
+
+[logo10]: 10.png "10"
+
+
+![alt text][logo11]
+
+[logo11]: 11.png "11"
+
+Using the computation graph, we want to minimize loss function `L(a,y)` by tweaking values `w1`, `w2` and `b`.
+
+We can backpropagate to find the derivatives of `d(L)/d(w1)`, `d(L)/d(w2)` and `d(L)/d(b)`.
+
+The values of `w1`, `w2` and `b` are then changed accordingly
+
+```
+w1 := w1 - a( d(L)/d(w1) )
+w2 := w2 - a( d(L)/d(w2) )
+b := b - a( d(L)/d(b) )
+```
+
+Where `a` is the learning rate
+
+## Gradient Descent over multiple training examples
+
+![alt text][logo12]
+
+[logo12]: 12.png "12"
+
+![alt text][logo13]
+
+[logo13]: 13.png "13"
+
+The draw back of this is that having huge number of features, your `for loop` will take a really long time. To tackle this, we will need to vectorize your variables.
