@@ -25,7 +25,7 @@ The Cost Function is the average of the Loss Function applied to each example
 
 Loss Function is applied to a single training example, while the Cost Function is the avrage across all training examples.
 
-![alt text][logo4]
+![alt text][logo5]
 
 [logo5]: 5.png "5"
 
