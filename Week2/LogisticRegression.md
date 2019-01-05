@@ -30,3 +30,26 @@ Loss Function is applied to a single training example, while the Cost Function i
 [logo5]: 5.png "5"
 
 During training, we want to minimize the Cost Function
+
+## Gradient Descent to learn the parameters in Logistic Regression
+
+The Cost Function defined above has a convexed shape, which allows for gradient descent.
+
+![alt text][logo6]
+
+[logo6]: 6.png "6"
+
+
+![alt text][logo7]
+
+[logo7]: 7.png "7"
+
+If the gradient is positive, `w` will subtract a positive number, decreasing the value of `w`
+
+If the gradient is negative, `w` will subtract a negative number, increasing the value of `w`
+
+Depending on which value you're updating, `w` or `b`, we take the derivative with respect to that value.
+
+![alt text][logo8]
+
+[logo8]: 8.png "8"
