@@ -31,7 +31,7 @@ Loss Function is applied to a single training example, while the Cost Function i
 
 During training, we want to minimize the Cost Function
 
-The Cost Function tells you how well your model did.
+The Cost Function tells you how well your model did, so we want to find optimal `w` and `b` values to produce a lower value Cost Function.
 
 ## Gradient Descent to learn the parameters in Logistic Regression
 
