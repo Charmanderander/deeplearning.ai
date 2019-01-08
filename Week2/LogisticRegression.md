@@ -31,6 +31,8 @@ Loss Function is applied to a single training example, while the Cost Function i
 
 During training, we want to minimize the Cost Function
 
+The Cost Function tells you how well your model did.
+
 ## Gradient Descent to learn the parameters in Logistic Regression
 
 The Cost Function defined above has a convexed shape, which allows for gradient descent.
