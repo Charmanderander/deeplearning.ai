@@ -114,3 +114,9 @@ Where `a` is the learning rate
 [logo13]: 13.png "13"
 
 The draw back of this is that having huge number of features, your `for loop` will take a really long time. To tackle this, we will need to vectorize your variables.
+
+`d(L)/d(z)` can be expanded to `a - y`
+
+`d(L)/d(w)` can be expanded to `x * d(L)/d(z)`
+
+`d(L)/d(b)` can be expanded to `d(L)/d(z)`
