@@ -82,3 +82,33 @@ Back propagation with Gradient Descent requires calculating the derivative of th
 ![alt text][logo7]
 
 [logo7]: 7.png "7"
+
+## Gradient Descent in Neural Networks
+
+![alt text][logo8]
+
+[logo8]: 8.png "8"
+
+After calculating forward propagation, you get `A[2]`, which is the output of the model. You use the loss function (by finding the difference between your model's output, and the actual output) to compute `d(A[2])`, which is `(-y/a) + (1-y)/(1-a)`.
+
+Using `d(A[2])` and derivative chain rule, we calculate `d(z[2])`, which turns out to be simply `A[2] - y`
+
+Using `d(z[2])`, you can then calculate the derivatives of the previous layers, and update their weights `w` and `b` accordingly.
+
+We keep repeating this until `w` and `b` converges.
+
+![alt text][logo9]
+
+[logo9]: 9.png "9"
+
+`A[2]` is the output of your model
+
+`y` is the true values
+
+`A[1]` is the output of the first hidden layer
+
+`m` is your total training examples
+
+## Random Weights Initialization
+
+In Neural Networks, you cannot set your initial weights to 0, if not Gradient Descent will not work
