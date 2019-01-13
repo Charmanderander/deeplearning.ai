@@ -112,3 +112,5 @@ We keep repeating this until `w` and `b` converges.
 ## Random Weights Initialization
 
 In Neural Networks, you cannot set your initial weights to 0, if not Gradient Descent will not work
+
+The random values should be really small. This is because if the activation functions have too large `z`, the learning will be slow
