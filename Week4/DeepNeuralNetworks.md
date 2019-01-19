@@ -23,3 +23,29 @@ Inputs to each layers are the outputs of the previous layer
 `W[2] = (n[2], n[1])`
 
 `W[i] = (n[i], n[i-1])`
+
+## Deep Representation
+
+Earlier layers represent simple features of the inputs. Going down the network, we can combine these features to get a more complex representation
+
+![alt text][logo3]
+
+[logo3]: 3.png "3"
+
+This applies to other data as well, instead of just images such as Audio
+
+There mathematical functions that are much easier to compute using deep neural networks
+
+## Building Blocks of a Deep NN
+
+Forward and Backward propagation
+
+![alt text][logo4]
+
+[logo4]: 4.png "4"
+
+## Forward and Backward Propagation
+
+![alt text][logo5]
+
+[logo5]: 5.png "5"
