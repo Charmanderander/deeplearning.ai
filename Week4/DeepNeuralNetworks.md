@@ -54,6 +54,10 @@ Forward and Backward propagation
 
 [logo6]: 6.png "6"
 
+![alt text][logo7]
+
+[logo7]: 7.png "7"
+
 ## Hyperparameters and Parameters
 
 Parameters: The input data, weights, bias values
