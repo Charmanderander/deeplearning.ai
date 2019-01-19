@@ -49,3 +49,13 @@ Forward and Backward propagation
 ![alt text][logo5]
 
 [logo5]: 5.png "5"
+
+![alt text][logo6]
+
+[logo6]: 6.png "6"
+
+## Hyperparameters and Parameters
+
+Parameters: The input data, weights, bias values
+
+Hyperparameters: Learning rate, iterations, number of hidden layers, number of hidden unit, choice of activation function
