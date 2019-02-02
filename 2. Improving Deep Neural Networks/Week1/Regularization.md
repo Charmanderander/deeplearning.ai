@@ -16,4 +16,4 @@ L2 Regularization adds a penalty to the cost function. The penalty value is calc
 
 ![alt text][logo3]
 
-[logo3]: 1.png "3"
+[logo3]: 3.png "3"
