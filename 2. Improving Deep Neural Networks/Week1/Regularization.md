@@ -47,4 +47,3 @@ Downside for dropout: Cost function is less well defined because you're randomly
 - Use early stopping to stop the training iterations when your training and testing score starts to diverge. Early stopping prevents your model from growing too lage, and thus become prone to overfitting
 
 - Try using just L2, and not early stopping first
-
