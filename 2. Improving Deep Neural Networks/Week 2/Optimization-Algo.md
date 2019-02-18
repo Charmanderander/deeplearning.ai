@@ -38,4 +38,29 @@ If training set is small, use Batch Gradient Descent (<2000)
 
 If training set is large, use `M` = 64, 128 or 512 (power of 2)
 
+# Other Optimization Algorithms Other Than Gradient Descent
+
+Exponentially Weight Averages
+
+```
+V0 = 0
+V1 = 0.9 * V0 + 0.1 * X1
+V2 = 0.9 * V1 + 0.1 * X2
+...
+VT = 0.9 * V(T-1) + 0.1 * XT
+```
+
+Or More generally
+
+`VT = Z * V(T-1) + (1 - Z) * XT`
+
+`VT` is approximately averaging over `1 / (1 - Z)` data points
+
+A higher value of `Z` will result in a graph that reacts more slowly to changes, because it averages over a larger number of data points, and a smaller weight `1 - Z` is given to the current data.
+
+# Bias Correction in Exponentially Weighted Averages
+
+When you initialize `V0 = 0`, `V1 = 0.9 * V0 + 0.1 * X1` becomes very small, and is not a good estimate of the actual data, because the equation just becomes `V1 = 0.1 * X1`, which is wrong.
+
+We need to add a bias correction, which is `V1 / (1 - Z^1)`, or more generally, `VT / (1 - Z^T)`. Because `Z < 1`, as `T` becomes large, `Z^T` approaches zero, which removes the bias correction (which is what we want)
 
