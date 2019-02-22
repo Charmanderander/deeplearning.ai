@@ -11,3 +11,9 @@
 3. Runs one iteration of gradient descent to minimize the cost function
 
 `session.run(train)` 
+
+4. Feeding it data to the model
+
+`coefficients = np.array([[1.], [-20.], [100.]])`
+
+`session.run(train, feed_dict={x:coefficients})`
